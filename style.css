@@ -1,0 +1,90 @@
+body {
+    font-family: GillSans, Calibri, Trebuchet, sans-serif;
+    background-color: #f6f5f0;
+}
+
+.section,
+#btn-back {
+    display: none;
+}
+
+#btn-options {
+    background-color: #e9e9ed;
+    color: #555555;
+}
+
+#nav {
+    float: right;
+    margin-bottom: 2em;
+}
+
+.btn {
+    cursor: pointer;
+    background-color: #555555;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.btn-success {
+    background-color: #aac170;
+}
+
+.btn-danger {
+    background-color: #f44336;
+}
+
+.btn-info {
+    background-color: #7aa8bf;
+}
+
+.btn-edit {
+    min-width: 200px;
+    margin-bottom: 1em;
+}
+
+.btn:hover {
+    box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.1);
+}
+
+#habit-list,
+#options {
+    text-align: center;
+}
+
+.habit-item {
+    background-color: #ccc;
+    color: #36454F;
+    display: inline-block;
+    border: 2px solid #36454F;
+    border-radius: 5px;
+    width: 100px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    vertical-align: middle;
+    max-width: 200px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.habit-item.complete {
+    background-color: #aac170;
+    color: darkgreen;
+    border-color: darkgreen;
+}
+
+.habit-item:hover {
+    box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.1);
+}
+
+#title {
+    text-align: center;
+    color: darkgreen;
+    clear: both;
+}

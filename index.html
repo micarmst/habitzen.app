@@ -1,1 +1,54 @@
-habitzen
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Habitzen</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="/style.css">
+
+</head>
+
+<body>
+    <div id="nav">
+        <button id="btn-options" type="button" class="btn" onclick="habitzen.options()">Options</button>
+        <button id="btn-back" type="button" class="btn" onclick="habitzen.main()">Back</button>
+    </div>
+
+
+    <div id="title">
+        <h1>Habitzen</h1>
+    </div>
+
+    <div id="main" class="section">
+        <div id="habit-list"></div>
+    </div>
+
+    <div id="options" class="section">
+        <h3>Edit Habits</h3>
+        <div id="edit-list"></div>
+        <button id="btn-new-habit" type="button" class="btn btn-edit btn-success" onclick="habitzen.new()">★&nbsp;New
+            Habit</button>
+    </div>
+
+    <div id="edit" class="section" data-id="">
+        <h2><span id="edit-title"></span></h2>
+        <input id="txt-edit-name" type="text" maxlength="50">
+
+        <button id="btn-edit-save" type="button" class="btn btn-success" onclick="habitzen.save()">Save</button>
+        <br>
+        <br>
+        <br>
+        <button id="btn-edit-delete" type="button" class="btn btn-danger" onclick="habitzen.delete()">Delete</button>
+    </div>
+
+    <script src="bundle.js"></script>
+</body>
+
+</html>

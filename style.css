@@ -1,6 +1,7 @@
 body {
     font-family: GillSans, Calibri, Trebuchet, sans-serif;
     background-color: #f6f5f0;
+    font-size: 16px;
 }
 
 .section,
@@ -53,7 +54,8 @@ body {
 }
 
 #habit-list,
-#options {
+#options,
+#edit {
     text-align: center;
 }
 
@@ -87,4 +89,11 @@ body {
     text-align: center;
     color: darkgreen;
     clear: both;
+}
+
+/* https://stackoverflow.com/a/6394497 */
+input[type='text'],
+input[type='number'],
+textarea {
+    font-size: 16px;
 }

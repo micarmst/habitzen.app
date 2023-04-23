@@ -41,11 +41,12 @@
         <h2><span id="edit-title"></span></h2>
         <input id="txt-edit-name" type="text" maxlength="50">
 
-        <button id="btn-edit-save" type="button" class="btn btn-success" onclick="habitzen.save()">Save</button>
-        <br>
-        <br>
-        <br>
-        <button id="btn-edit-delete" type="button" class="btn btn-danger" onclick="habitzen.delete()">Delete</button>
+        <div style="margin-top:1em;text-align:center;">
+            <button id="btn-edit-delete" type="button" class="btn btn-danger"
+                style="margin-top:1em;margin-right:1em;display:inline-block !important;"
+                onclick="habitzen.delete()">Delete</button>
+            <button id="btn-edit-save" type="button" class="btn btn-success" onclick="habitzen.save()">Save</button>
+        </div>
     </div>
 
     <script src="bundle.js"></script>

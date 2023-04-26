@@ -267,7 +267,8 @@ var Habitzen = /** @class */ (function () {
         });
         document.addEventListener("visibilitychange", function () {
             if (document.visibilityState === "visible") {
-                self.page.refreshHabits();
+                //self.page.refreshHabits();
+                window.location.reload();
             }
         });
     }

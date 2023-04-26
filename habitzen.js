@@ -264,13 +264,9 @@ var Habitzen = /** @class */ (function () {
         document.addEventListener("DOMContentLoaded", function () {
             self.page.showMain();
         });
-        // Refresh on focus
-        document.addEventListener("focus", function () {
-            //self.page.refreshHabits();
-        });
         document.addEventListener("visibilitychange", function () {
             if (document.visibilityState === "visible") {
-                alert('test');
+                self.page.refreshHabits();
             }
         });
     }

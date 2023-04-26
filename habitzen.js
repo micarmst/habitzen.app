@@ -266,7 +266,12 @@ var Habitzen = /** @class */ (function () {
         });
         // Refresh on focus
         document.addEventListener("focus", function () {
-            self.page.refreshHabits();
+            //self.page.refreshHabits();
+        });
+        document.addEventListener("visibilitychange", function () {
+            if (document.visibilityState === "visible") {
+                alert('test');
+            }
         });
     }
     Habitzen.prototype.main = function () {

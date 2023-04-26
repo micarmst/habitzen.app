@@ -51,6 +51,7 @@ var Habits = /** @class */ (function () {
     }
     Object.defineProperty(Habits.prototype, "list", {
         get: function () {
+            this.load();
             return this.data;
         },
         enumerable: false,
